@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFK Östersund - Spelarschema</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            padding: 15px;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            color: #005BAC;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: white;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+            font-size: 14px;
+        }
+        th {
+            background-color: #005BAC;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            th, td {
+                font-size: 12px;
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Sök Spelare</h2>
+    <p>Skriv spelarens namn för att visa vilka matcher hen deltar i:</p>
+    <input type="text" id="searchInput" onkeyup="filterTable()" placeholder="Exempel: Olle">
+
+    <table id="matchTable">
+        <thead>
+            <tr>
+                <th>Datum</th>
+                <th>Tid</th>
+                <th>Lag</th>
+                <th>Motståndare</th>
+                <th>Plats</th>
+                <th>Spelare</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <td>2025-06-13</td>
+            <td>16:40</td>
+            <td>Vit 1</td>
+            <td>Järvsö BK</td>
+            <td>Ullsätter B</td>
+            <td></td>
+        </tr>
+    
+        <tr>
+            <td>2025-06-13</td>
+            <td>16:40</td>
+            <td>Vit 2</td>
+            <td>Sunnersta AIF 2</td>
+            <td>Ullsätter C</td>
+            <td></td>
+        </tr>
+    
+        <tr>
+            <td>2025-06-13</td>
+            <td>18:00</td>
+            <td>Blå</td>
+            <td>Ljusdals IF 2</td>
+            <td>Ullsätter D</td>
+            <td>Olle, Adrian, Algot , Vilgot, Hjalmar GA, Sixten, Tille, Elias , Ruben , Torsten</td>
+        </tr>
+    
+        <tr>
+            <td>2025-06-14</td>
+            <td>08:00</td>
+            <td>Vit 1</td>
+            <td>Selånger SK 3</td>
+            <td>Kungsvallen C</td>
+            <td></td>
+        </tr>
+    
+        <tr>
+            <td>2025-06-14</td>
+            <td>08:00</td>
+            <td>Vit 2</td>
+            <td>Högs SK</td>
+            <td>Kungsvallen D</td>
+            <td></td>
+        </tr>
+    
+        <tr>
+            <td>2025-06-14</td>
+            <td>11:20</td>
+            <td>Blå</td>
+            <td>Åre SLK Svart</td>
+            <td>Tunet C</td>
+            <td>Olle, Lave, Torsten, Folke, August, Hjalmar A, Frans H, Elias , Erik , Vilgot</td>
+        </tr>
+    
+        <tr>
+            <td>2025-06-14</td>
+            <td>13:20</td>
+            <td>Vit 1</td>
+            <td>Strands IF Norr/Sv</td>
+            <td>Movallen C</td>
+            <td></td>
+        </tr>
+    
+        <tr>
+            <td>2025-06-14</td>
+            <td>13:20</td>
+            <td>Vit 2</td>
+            <td>Iggesund IK</td>
+            <td>Movallen D</td>
+            <td></td>
+        </tr>
+    
+        <tr>
+            <td>2025-06-14</td>
+            <td>16:00</td>
+            <td>Blå</td>
+            <td>Alnö IF 1</td>
+            <td>Kungsvallen D</td>
+            <td>Olle, Ruben, Lave, Adrian, Algot, Frans B, Vilgot, Hjalmar GA, Karl-Hugo, August</td>
+        </tr>
+    
+        <tr>
+            <td>2025-06-14</td>
+            <td>17:20</td>
+            <td>Vit 1</td>
+            <td>Norrala IF</td>
+            <td>Sparbanken Arena C</td>
+            <td></td>
+        </tr>
+    
+        <tr>
+            <td>2025-06-14</td>
+            <td>17:20</td>
+            <td>Vit 2</td>
+            <td>Enångers IK</td>
+            <td>Sparbanken Arena B</td>
+            <td></td>
+        </tr>
+    
+        <tr>
+            <td>2025-06-15</td>
+            <td>09:40</td>
+            <td>Blå</td>
+            <td>Högs SK</td>
+            <td>Kungsvallen C</td>
+            <td>Olle, Sixten, Tille, Erik, Vilgot, Folke , Karl-Hugo, Frans H</td>
+        </tr>
+    
+        <tr>
+            <td>2025-06-15</td>
+            <td>09:40</td>
+            <td>Vit 1</td>
+            <td>Strands IF Öster/Vit</td>
+            <td>Sparbanken Arena A</td>
+            <td>Adrian, Lave, Hjalmar A, Frans B, Valter P, Valter L, Hjalmar GA, August</td>
+        </tr>
+    
+        <tr>
+            <td>2025-06-15</td>
+            <td>10:20</td>
+            <td>Vit 2</td>
+            <td>Strands IF Söder/Vit</td>
+            <td>Ullsätter D</td>
+            <td>Algot, Torsten, Ruben, Behm, Noa, Evert, Vidar, Elias </td>
+        </tr>
+    
+        <tr>
+            <td>2025-06-15</td>
+            <td>13:40</td>
+            <td>Blå</td>
+            <td>Sundsvalls FF 1</td>
+            <td>Movallen C</td>
+            <td>Olle, Adrian, Algot , Frans B, Vilgot, August, Hjalmar A, Frans H, Tille</td>
+        </tr>
+    
+        </tbody>
+    </table>
+
+    <script>
+        function filterTable() {
+            var input = document.getElementById("searchInput").value.toLowerCase();
+            var rows = document.getElementById("matchTable").getElementsByTagName("tr");
+
+            for (var i = 1; i < rows.length; i++) {
+                var playerCell = rows[i].getElementsByTagName("td")[5];
+                if (playerCell) {
+                    var playerText = playerCell.textContent || playerCell.innerText;
+                    rows[i].style.display = playerText.toLowerCase().includes(input) ? "" : "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
